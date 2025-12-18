@@ -1,3 +1,4 @@
+# -----------Get Average of numbers--------------
 # y=int(input("n:"))
 # counter =1
 # s1 = 0
@@ -17,17 +18,30 @@
 # print("avg1=", s1/c1)
 # print("avg2=", s2/c2)
 
-y=int(input("n:"))
-counter =1
-s = 0
-c = 0
-while counter<=y:
-    grade=float(input("enter grade:"))
-    unit = int(input("enter unit:"))
-    s = s + (grade * unit)
-    c = c + unit
-    counter = counter + 1
+# -----------Get Average of grades--------------
+# y=int(input("n:"))
+# counter =1
+# s = 0
+# c = 0
+# while counter<=y:
+#     grade=float(input("enter grade:"))
+#     unit = int(input("enter unit:"))
+#     s = s + (grade * unit)
+#     c = c + unit
+#     counter = counter + 1
 
-print("avg=", s/c)
-print("sum=", s)
-print("unit=", c)
+# print("avg=", s/c)
+# print("sum=", s)
+# print("unit=", c)
+
+# -----------Get count of digits--------------
+# 155468
+# print(155468//10)
+x = int(input("Enter a number:"))
+count = 0
+while x != 0:
+    x = x // 10
+    count = count + 1
+print("count =", count)
+
+# -----------Get sum of digits--------------
