@@ -37,11 +37,39 @@
 # -----------Get count of digits--------------
 # 155468
 # print(155468//10)
-x = int(input("Enter a number:"))
-count = 0
-while x != 0:
-    x = x // 10
-    count = count + 1
-print("count =", count)
+# x = int(input("Enter a number:"))
+# count = 0
+# while x != 0:
+#     x = x // 10
+#     count = count + 1
+# print("count =", count)
 
 # -----------Get sum of digits--------------
+# x = int(input("Enter a number:"))
+# s = 0
+# while x != 0:
+#     digit = x % 10
+#     s = s + digit
+#     x = x // 10
+# print("sum =", s)
+
+# -----------Get sum and count of odd and even digits--------------
+
+x = int(input("Enter a number:"))
+s_odd = 0
+s_even = 0
+c_odd = 0
+c_even = 0
+while x != 0:
+    digit = x % 10
+    if digit % 2 == 0:
+        s_even = s_even + digit
+        c_even = c_even + 1
+    else:
+        s_odd = s_odd + digit
+        c_odd = c_odd + 1
+    x = x // 10
+print("sum of odd digits =", s_odd)
+print("sum of even digits =", s_even)
+print("count of odd digits =", c_odd)
+print("count of even digits =", c_even)
