@@ -55,21 +55,51 @@
 
 # -----------Get sum and count of odd and even digits--------------
 
-x = int(input("Enter a number:"))
-s_odd = 0
-s_even = 0
-c_odd = 0
-c_even = 0
-while x != 0:
-    digit = x % 10
-    if digit % 2 == 0:
-        s_even = s_even + digit
-        c_even = c_even + 1
-    else:
-        s_odd = s_odd + digit
-        c_odd = c_odd + 1
-    x = x // 10
-print("sum of odd digits =", s_odd)
-print("sum of even digits =", s_even)
-print("count of odd digits =", c_odd)
-print("count of even digits =", c_even)
+# x = int(input("Enter a number:"))
+# s_odd = 0
+# s_even = 0
+# c_odd = 0
+# c_even = 0
+# while x != 0:
+#     digit = x % 10
+#     if digit % 2 == 0:
+#         s_even = s_even + digit
+#         c_even = c_even + 1
+#     else:
+#         s_odd = s_odd + digit
+#         c_odd = c_odd + 1
+#     x = x // 10
+# print("sum of odd digits =", s_odd)
+# print("sum of even digits =", s_even)
+# print("count of odd digits =", c_odd)
+# print("count of even digits =", c_even)
+
+# -----------Get perfect number--------------
+# 6  -> 1+2+3+6 = 12
+
+# n = int(input("Enter n:"))
+# c = 1
+# sum = 0
+# while c < n:
+#     if n % c == 0:
+#         sum = sum + c
+#     c = c + 1
+# if sum == n:
+#     print(n , "is a perfect number")
+# else:
+#     print(n , "is not a perfect number")
+
+
+# -----------Get prime number--------------
+
+n = int(input("Enter n:"))
+c = 2
+is_prime = True
+while c < n:
+    if n % c == 0:
+        is_prime = False
+    c = c + 1
+if is_prime:
+    print(n , "is a prime number")
+else:
+    print(n , "is not a prime number")
