@@ -17,10 +17,12 @@ for i in range(n):
 avg = sum_grade_unit / sum(lesson_units)
 row_col = "#"
 name_col = "Name"
-print("#\t", "Name\t", "Unit\t", "Grade")
+unit_col = "Unit"
+grade_col = "Grade"
+print(f"{row_col:5}{name_col:^25}{unit_col:^10}{grade_col:^10}")
 print("-"*50)
 for i in range(len(lesson_names)):
-    print(i+1,"\t", lesson_names[i],"\t", lesson_units[i],"\t", lesson_grades[i])
+    print(f"{i+1:<5}{lesson_names[i]:^25}{lesson_units[i]:^10}{lesson_grades[i]:^10.2f}")
 print("-"*50)
 print("Avg:", round(avg,2))
 
