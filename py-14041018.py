@@ -87,5 +87,6 @@ info = {
     "age": x   
 }
 # print(info["lname"])
-for k,x in info.items():
-    print(k,x)
+# for x,y in info.items():
+#     print(x,y)
+
