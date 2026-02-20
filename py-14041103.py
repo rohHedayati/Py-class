@@ -25,7 +25,7 @@ user_score = 0
 computer_score = 0
 Rounds = 0
 choices = [0, 1, 2]
-
+f = open('files/result.txt', mode='a')
 while True:
     user_choice = get_user_choice()
     computer_choice = rnd.choice(choices)
@@ -36,11 +36,12 @@ while True:
     
     print("="*30)
     print(f"User score: {user_score}  --- Computer score: {computer_score}")
+    f.write(f"User score: {user_score}  --- Computer score: {computer_score}\n")
     print("="*30)
 
     if Rounds >= 5 :
         break
-
+f.close()
 if user_score > computer_score:
     print("User win the game!")
 elif user_score < computer_score:
